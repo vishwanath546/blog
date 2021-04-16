@@ -36,7 +36,7 @@ public function __construct()
 	public function getAllBlogsForAdmin(){
 		$this->db->select(array('*'));
 		$this->db->where(array('created_by'=>$this->session->user_session->id));
-		$this->db->order_by('id', 'desc');
+
 		$data=$this->db->get('blog_master_all')->result();
 		if(count($data)>0){
 			return $data;
