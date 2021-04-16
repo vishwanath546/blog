@@ -79,7 +79,7 @@
 
 			</div>
 			<div class="modal-footer d-flex justify-content-center">
-				<button class="btn btn-default" type="submit">Login</button>
+				<button class="btn btn-danger" type="submit">Login</button>
 			</div>
 		</div>
 		</form>

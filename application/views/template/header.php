@@ -36,6 +36,9 @@
 		.error{
 			color: red;
 		}
+		.ho:hover {
+			background-color: red;
+		}
 	</style>
 </head>
 <body>
@@ -72,10 +75,10 @@
 					<?php
 					if($this->session->user_session!=null) {
 					?>
-						<a class="dropdown-item" type="button" onclick="logout()">Logout</a>
+						<a  class="ho" type="button" onclick="logout()">Logout</a>
 					<?php } else {
 					?>
-						<a class="dropdown-item" type="button" data-toggle="modal" data-target="#modalLoginForm">Login</a>
+						<a  class="ho" type="button" data-toggle="modal" data-target="#modalLoginForm">Login</a>
 					<?php  }  ?>
 
 
